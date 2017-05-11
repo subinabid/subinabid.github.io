@@ -1,21 +1,33 @@
 /*
-	Miniport by HTML5 UP
+	Aerial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Button */
+/* Wrapper */
 
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	button,
-	.button {
-		background-image: url("images/ie/grad0-20.svg");
+	#wrapper {
+		opacity: 1;
 	}
 
-/* List */
+/* Overlay */
 
-	ul.social li a:before {
-		background-image: url("images/ie/grad0-20.svg");
+	#overlay {
+		opacity: 1;
+	}
+
+/* Header */
+
+	#header {
+		opacity: 1;
+	}
+
+		#header nav li {
+			opacity: 1;
+		}
+
+/* Footer */
+
+	#footer {
+		background-image: url("images/ie/footer.svg");
 	}
