@@ -115,7 +115,7 @@ function clockload() {
   cs.stroke();
   cs.font = "20px Arial ";
   cs.textAlign = "center";
-  cs.fillStyle = "#000000";
+  cs.fillStyle = "#fff";
   cs.fillText(csecond + " sec", 90, 95);
   //end of canvas
   },1000)
