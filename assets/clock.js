@@ -38,7 +38,7 @@ function clockload() {
   var cleaner = document.getElementById("seconds");
   var c = cleaner.getContext("2d");
   c.fillStyle="#FFFFFF";
-  c.fillRect(0,0,180,180);
+  c.clearRect(0,0,180,180);
 
   var cleaner = document.getElementById("minutes");
   var c = cleaner.getContext("2d");
