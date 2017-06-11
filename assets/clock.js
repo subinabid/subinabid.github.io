@@ -63,11 +63,11 @@ function clockload() {
   cm.beginPath();
   cm.arc(90,90,70,deg(0),deg(360*cmonth/12));
   cm.lineWidth = 20;
-  cm.strokeStyle = "#3d4552";
+  cm.strokeStyle = "#fff";
   cm.stroke();
   cm.font = "20px Arial ";
   cm.textAlign = "center";
-  cm.fillStyle = "#000000";
+  cm.fillStyle = "#fff";
   cm.fillText(cmonth + " months", 90, 95);
 
   var canvas_days = document.getElementById('days');
@@ -75,11 +75,11 @@ function clockload() {
   cd.beginPath();
   cd.arc(90,90,70,deg(0),deg(360*cday/30));
   cd.lineWidth = 20;
-  cd.strokeStyle = "#3d4552";
+  cd.strokeStyle = "#fff";
   cd.stroke();
   cd.font = "20px Arial ";
   cd.textAlign = "center";
-  cd.fillStyle = "#000000";
+  cd.fillStyle = "#fff";
   cd.fillText(cday + " days", 90, 95);
 
   var canvas_hours = document.getElementById('hours');
@@ -87,11 +87,11 @@ function clockload() {
   ch.beginPath();
   ch.arc(90,90,70,deg(0),deg(360*chour/24));
   ch.lineWidth = 20;
-  ch.strokeStyle = "#3d4552";
+  ch.strokeStyle = "#fff";
   ch.stroke();
   ch.font = "20px Arial ";
   ch.textAlign = "center";
-  ch.fillStyle = "#000000";
+  ch.fillStyle = "#fff";
   ch.fillText(chour + " hrs", 90, 95);
 
   var canvas_minutes = document.getElementById('minutes');
@@ -99,11 +99,11 @@ function clockload() {
   cm.beginPath();
   cm.arc(90,90,70,deg(0),deg(360*cminute/60));
   cm.lineWidth = 20;
-  cm.strokeStyle = "#3d4552";
+  cm.strokeStyle = "#fff";
   cm.stroke();
   cm.font = "20px Arial ";
   cm.textAlign = "center";
-  cm.fillStyle = "#000000";
+  cm.fillStyle = "#fff";
   cm.fillText(cminute + " min", 90, 95);
 
   var canvas_seconds = document.getElementById('seconds');
@@ -111,7 +111,7 @@ function clockload() {
   cs.beginPath();
   cs.arc(90,90,70,deg(0),deg(360*csecond/60));
   cs.lineWidth = 20;
-  cs.strokeStyle = "#3d4552";
+  cs.strokeStyle = "#fff";
   cs.stroke();
   cs.font = "20px Arial ";
   cs.textAlign = "center";
