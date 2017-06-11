@@ -21,10 +21,12 @@ function clockload() {
   duration = duration/60;
   var chour = Math.floor(duration%24);
   duration = duration/24;
+  
+  // day, month and year needs different approach
+    
   var cday = Math.floor(duration%30);
   duration = duration/30;
-
-  //month and year needs different approach
+    
   var monthcorrection = 0;
   if (tod.getMonth()< 10) {
     monthcorrection = 13;
@@ -37,28 +39,23 @@ function clockload() {
   //Clear canvas
   var cleaner = document.getElementById("seconds");
   var c = cleaner.getContext("2d");
-  c.fillStyle="#FFFFFF";
   c.clearRect(0,0,180,180);
 
   var cleaner = document.getElementById("minutes");
   var c = cleaner.getContext("2d");
-  c.fillStyle="#FFFFFF";
-  c.fillRect(0,0,180,180);
+  c.clearRect(0,0,180,180);
 
   var cleaner = document.getElementById("hours");
   var c = cleaner.getContext("2d");
-  c.fillStyle="#FFFFFF";
-  c.fillRect(0,0,180,180);
+  c.clearRect(0,0,180,180);
 
   var cleaner = document.getElementById("days");
   var c = cleaner.getContext("2d");
-  c.fillStyle="#FFFFFF";
-  c.fillRect(0,0,180,180);
+  c.clearRect(0,0,180,180);
 
   var cleaner = document.getElementById("months");
   var c = cleaner.getContext("2d");
-  c.fillStyle="#FFFFFF";
-  c.fillRect(0,0,180,180);
+  c.clearRect(0,0,180,180);
 
   //Start drawing canvas
   var canvas_months = document.getElementById('months');
