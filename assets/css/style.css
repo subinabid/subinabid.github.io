@@ -395,6 +395,6 @@ input {
 		}
 
 		#sep i::after {
-			content: "\a";
+			content: "</br>";
 		}
 }
