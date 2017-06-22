@@ -381,7 +381,7 @@ input {
 			min-width: 320px;
 		}
 
-		#h, #g, #sep, #f {
+		#h, #g, #sep, #f {d
 			width: 100%
 		}
 
@@ -392,5 +392,9 @@ input {
 		#h{
 			min-height: 300px;
 			background: url(../img/header.jpg) max-width:320px no-repeat center top;
+		}
+
+		#sep i::after {
+			content: "\a";
 		}
 }
