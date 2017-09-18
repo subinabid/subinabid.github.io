@@ -378,43 +378,14 @@ input {
 /* Error page */
 #ErrPage {
 	background: url(../img/sep.jpg) no-repeat center top;
+	height: 100%;
 	padding-top: 100px;
 	background-attachment: relative;
 	background-position: center center;
-	height: 100%;
-	color: white;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
-}
-
-#ErrPage h3 {
-	font-weight: 300;
-	letter-spacing: 2px;
-}
-
-#ErrPage i {
-	margin-right: 30px;
-	font-size: 18px;
-	font-weight: 300;
-}
-
-#ErrPage a {
 	color: white;
 }
 
-#ErrPage a:hover {
-	text-decoration: none;
-  	color:#1abc9c;
-}
+
 
 @media only screen and (max-device-width:480px) {
 
