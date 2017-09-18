@@ -323,7 +323,7 @@ input {
 
 #sep a:hover {
 	text-decoration: none;
-  color:#1abc9c;
+  	color:#1abc9c;
 }
 
 /* FOOTER */
@@ -380,15 +380,9 @@ input {
 #ErrPage {
 	background: url(../img/sep.jpg) no-repeat;
 	height: 100%;
-	padding-top: 40%;
 	background-attachment: relative;
 	background-position: center center;
 	color: white;
-	
-     -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -397,7 +391,14 @@ input {
     color: white;
 }
 
+#sep a:hover {
+	text-decoration: none;
+  	color:white;
+}
 
+#ErrMsg {
+    	vertical-align: middle;
+}
 
 @media only screen and (max-device-width:480px) {
 
