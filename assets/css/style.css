@@ -7,7 +7,8 @@
  * Version: 1.0
  */
 
-/*	################################################################
+/*	
+################################################################
 	1. GENERAL STRUCTURES
 ################################################################# */
 
@@ -377,12 +378,23 @@ input {
 
 /* Error page */
 #ErrPage {
-	background: url(../img/sep.jpg) no-repeat center top;
+	background: url(../img/sep.jpg) no-repeat center center;
 	height: 100%;
 	padding-top: 100px;
 	background-attachment: relative;
 	background-position: center center;
 	color: white;
+	
+     -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
 }
 
 
