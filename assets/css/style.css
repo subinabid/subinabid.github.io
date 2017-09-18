@@ -380,7 +380,7 @@ input {
 #ErrPage {
 	background: url(../img/sep.jpg) no-repeat;
 	height: 100%;
-	padding-top: 100px;
+	padding-top: 40%;
 	background-attachment: relative;
 	background-position: center center;
 	color: white;
