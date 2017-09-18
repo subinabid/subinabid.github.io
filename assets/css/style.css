@@ -378,7 +378,7 @@ input {
 
 /* Error page */
 #ErrPage {
-	background: url(../img/sep.jpg) no-repeat center center;
+	background: url(../img/sep.jpg) no-repeat;
 	height: 100%;
 	padding-top: 100px;
 	background-attachment: relative;
