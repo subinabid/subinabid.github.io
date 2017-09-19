@@ -395,11 +395,8 @@ input {
 }
 
 .PageCenterMsg {
-	width: 100%
-	padding: 50%;
-	vertical-align: middle
-
-
+	position: absolute;
+	top: 50%;
 }
 
 @media only screen and (max-device-width:480px) {
