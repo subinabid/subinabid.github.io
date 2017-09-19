@@ -394,6 +394,12 @@ input {
   	color:white;
 }
 
+#ErrPage .logo {
+	margin-top: 30px;
+	margin-left: 40px;
+	padding-bottom: 150px;
+}
+
 @media only screen and (max-device-width:480px) {
 
 		body {
