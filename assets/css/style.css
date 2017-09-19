@@ -398,6 +398,7 @@ input {
 
 #ErrMsg {
     	vertical-align: middle;
+	height: 100%;
 }
 
 @media only screen and (max-device-width:480px) {
