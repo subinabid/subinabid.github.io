@@ -394,10 +394,6 @@ input {
   	color:white;
 }
 
-.PageCenterMsg {
-	padding-top: 200px;
-}
-
 @media only screen and (max-device-width:480px) {
 
 		body {
