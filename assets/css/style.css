@@ -397,6 +397,7 @@ input {
 .PageCenterMsg {
 	width: 100%
 	padding: 50%;
+	vertical-align: middle
 
 
 }
