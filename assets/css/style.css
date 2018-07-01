@@ -375,7 +375,7 @@ input {
 }
 
 /* Error page */
-#ErrPage {
+#errpage {
 	background: url(../img/sep.jpg) no-repeat;
 	height: 100%;
 	background-attachment: relative;
@@ -389,12 +389,12 @@ input {
     color: white;
 }
 
-#ErrPage a:hover {
+#errpage a:hover {
 	text-decoration: none;
   	color:white;
 }
 
-#ErrPage .logo {
+#errpage .logo {
 
 	padding-bottom: 210px;
 }
