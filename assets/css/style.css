@@ -389,13 +389,17 @@ input {
     color: white;
 }
 
-#errpage a:hover {
-	text-decoration: none;
-  	color:white;
+#errpage a {
+	color: white;
 }
 
-#errpage .logo {
+#errpage a:hover {
+	text-decoration: none;
+  	color:#1abc9c;
+}
 
+
+#errpage .logo {
 	padding-bottom: 210px;
 }
 
