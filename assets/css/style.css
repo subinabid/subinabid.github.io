@@ -1,13 +1,4 @@
 /*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
- *
- * Theme Name: Basic
- * URL: http://blacktie.co
- * Version: 1.0
- */
-
-/*
 ################################################################
 	1. GENERAL STRUCTURES
 ################################################################# */
@@ -312,6 +303,12 @@ input {
 
 #sep i {
 	margin-right: 30px;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+#sep ion-icon {
+	margin-left: 20px;
 	font-size: 18px;
 	font-weight: 300;
 }

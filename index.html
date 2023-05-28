@@ -4,19 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="icon" href="assets/img/favicon.ico">
 
     <title>Subin Abid | Personal Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/ionicons.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
@@ -47,12 +41,12 @@
       <div class="row">
         <h2 class="centered mb">I am a Mechanical Engineer & Project Manager,<br/>getting my hands dirty in power plant construction.</h2>
         <div class="col-md-6">
-          <p>I am a mechanical engineer by graduation, power engineer by work environment and project manager by job. I have been working in power plant construction since 2012, taking care of structural installation, piping, tanks, cross country piping, air conditioning and ventilation system, fire detection and protection system etc <br> Recently, I moved to a project planning & monitoring role to handle a larger portfolio. </p>
+          <p>I am a mechanical engineer by graduation, power engineer by work environment and project manager by job. I have been working in power plant construction since 2011, taking care of structural installation, piping, tanks, cross country piping, air conditioning and ventilation system, fire detection and protection system etc <br> Recently, I moved to a project planning & monitoring role to handle a larger portfolio. </p>
         </div><!--/col-md-6-->
         <div class="col-md-6">
-          <p>I am trained and certified in technical as well as managerial skills. I am a certified project management associate (Level D) with IPMA, in addition to  CIPM, ultrasonic testing, welding inspection, boiler design (Doosan Heavy Industries, Korea), boiler operation, taxation etc. </br> 
+          <p>I am trained and certified in technical as well as managerial skills. I am a certified Project Manager (Level C) with IPMA, in addition to  CIPM, ultrasonic testing, welding inspection, boiler design (Doosan Heavy Industries, Korea), boiler operation, taxation etc. </br> 
           Before my current profile,  I worked in automotive R&D, data analytics, teaching & web marketing.</p>
-          <p>You can see my portfolio <a href="https://portfolio.subinabid.xyz/" target="_blank">here</a> or read my <a href="resume.html">resume</a></p>
+          <p>You can see my portfolio <a href="https://portfolio.sabid.in/" target="_blank">here</a> or read my <a href="resume.html">resume</a></p>
         </div><!--/col-md-6-->
       </div><!--/row-->
     </div><!-- /.container -->
@@ -207,11 +201,11 @@
           <h3 class="mb"><a href="meet.html">Lets have Coffee!</a></h3>
             <div class="col-md-8 col-md-offset-2">
 
-                <a><i class="ion-iphone">/7012243926</i></a>
-                <a href="https://www.linkedin.com/in/subinabid/" target="_blank"><i class="ion-social-linkedin">/SubinAbid</i></a>
-                <a href="https://www.facebook.com/subinabid" target="_blank"><i class="ion-social-facebook">/SubinAbid</i></a>
-                <a href="mailto:mail@subinabid.xyz" target="_blank"><i class="ion-email">mail@subinabid.xyz</i></a>
-                <a href="https://blog.subinabid.xyz" target="_blank"><i class="ion-compose">Blog</i></a>
+                <a><ion-icon name="call-outline"></ion-icon><i>7012243926</i></a>
+                <a href="https://www.linkedin.com/in/subinabid/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon><i>SubinAbid</i></a>
+                <a href="https://mas.to/@sabid" target="_blank"><ion-icon name="logo-mastodon"></ion-icon><i>SubinAbid</i></a>
+                <a href="mailto:io@sabid.in" target="_blank"><ion-icon name="mail-outline"></ion-icon><i>io@sabid.in</i></a>
+                <a href="https://blog.sabid.in" target="_blank"><ion-icon name="documents-outline"></ion-icon><i>Blog</i></a>
               </br>
 
               </div><!--/col-md-8-->
@@ -235,85 +229,88 @@
 
     <script>
 // Portfolio
-(function($) {
-  "use strict";
-  var $container = $('.portfolio'),
-    $items = $container.find('.portfolio-item'),
-    portfolioLayout = 'fitRows';
+  (function($) {
+    "use strict";
+    var $container = $('.portfolio'),
+      $items = $container.find('.portfolio-item'),
+      portfolioLayout = 'fitRows';
 
-    if( $container.hasClass('portfolio-centered') ) {
-      portfolioLayout = 'masonry';
-    }
-
-    $container.isotope({
-      filter: '*',
-      animationEngine: 'best-available',
-      layoutMode: portfolioLayout,
-      animationOptions: {
-      duration: 750,
-      easing: 'linear',
-      queue: false
-    },
-    masonry: {
-    }
-    }, refreshWaypoints());
-
-    function refreshWaypoints() {
-      setTimeout(function() {
-      }, 1000);
-    }
-
-    $('nav.portfolio-filter ul a').on('click', function() {
-        var selector = $(this).attr('data-filter');
-        $container.isotope({ filter: selector }, refreshWaypoints());
-        $('nav.portfolio-filter ul a').removeClass('active');
-        $(this).addClass('active');
-        return false;
-    });
-
-    function getColumnNumber() {
-      var winWidth = $(window).width(),
-      columnNumber = 1;
-
-      if (winWidth > 1200) {
-        columnNumber = 5;
-      } else if (winWidth > 950) {
-        columnNumber = 4;
-      } else if (winWidth > 600) {
-        columnNumber = 3;
-      } else if (winWidth > 400) {
-        columnNumber = 2;
-      } else if (winWidth > 250) {
-        columnNumber = 1;
-      }
-        return columnNumber;
+      if( $container.hasClass('portfolio-centered') ) {
+        portfolioLayout = 'masonry';
       }
 
-      function setColumns() {
-        var winWidth = $(window).width(),
-        columnNumber = getColumnNumber(),
-        itemWidth = Math.floor(winWidth / columnNumber);
+      $container.isotope({
+        filter: '*',
+        animationEngine: 'best-available',
+        layoutMode: portfolioLayout,
+        animationOptions: {
+        duration: 750,
+        easing: 'linear',
+        queue: false
+      },
+      masonry: {
+      }
+      }, refreshWaypoints());
 
-        $container.find('.portfolio-item').each(function() {
-          $(this).css( {
-          width : itemWidth + 'px'
-        });
+      function refreshWaypoints() {
+        setTimeout(function() {
+        }, 1000);
+      }
+
+      $('nav.portfolio-filter ul a').on('click', function() {
+          var selector = $(this).attr('data-filter');
+          $container.isotope({ filter: selector }, refreshWaypoints());
+          $('nav.portfolio-filter ul a').removeClass('active');
+          $(this).addClass('active');
+          return false;
       });
-    }
 
-    function setPortfolio() {
-      setColumns();
-      $container.isotope('reLayout');
-    }
+      function getColumnNumber() {
+        var winWidth = $(window).width(),
+        columnNumber = 1;
 
-    $container.imagesLoaded(function () {
+        if (winWidth > 1200) {
+          columnNumber = 5;
+        } else if (winWidth > 950) {
+          columnNumber = 4;
+        } else if (winWidth > 600) {
+          columnNumber = 3;
+        } else if (winWidth > 400) {
+          columnNumber = 2;
+        } else if (winWidth > 250) {
+          columnNumber = 1;
+        }
+          return columnNumber;
+        }
+
+        function setColumns() {
+          var winWidth = $(window).width(),
+          columnNumber = getColumnNumber(),
+          itemWidth = Math.floor(winWidth / columnNumber);
+
+          $container.find('.portfolio-item').each(function() {
+            $(this).css( {
+            width : itemWidth + 'px'
+          });
+        });
+      }
+
+      function setPortfolio() {
+        setColumns();
+        $container.isotope('reLayout');
+      }
+
+      $container.imagesLoaded(function () {
+        setPortfolio();
+      });
+
+      $(window).on('resize', function () {
       setPortfolio();
     });
-
-    $(window).on('resize', function () {
-    setPortfolio();
-  });
-})(jQuery);
-</script>
+  })(jQuery);
+  </script>
+  <!-- Ionic icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
